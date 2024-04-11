@@ -52,5 +52,64 @@ Links to relevant documentation, resources, or external references for further r
 ### Glossary
 Definitions of terms or concepts used in the documentation are included for reference.
 
+
+Here's how you can write instructions for the README.md file on how to run your SQL editor:
+
+
+## How to Run
+
+### Prerequisites
+- Node.js installed on your machine
+- Access to Google BigQuery and Snowflake databases
+- Environment variables configured for database connection details (see Environment Variables section)
+
+### Installation
+1. Clone the repository to your local machine:
+   ```
+   git clone https://github.com/your-username/sql-editor.git
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd sql-editor
+   ```
+
+3. Install dependencies:
+   ```
+   npm install
+   ```
+
+### Environment Variables
+1. Create an `.env` file in the root of the project directory.
+2. Define the following environment variables in the `.env` file:
+   ```
+   SNOWFLAKE_ACCOUNT=your_account_name
+   SNOWFLAKE_USERNAME=your_username
+   SNOWFLAKE_PASSWORD=your_password
+   SNOWFLAKE_WAREHOUSE=your_warehouse
+   SNOWFLAKE_DATABASE=your_database
+   SNOWFLAKE_SCHEMA=your_schema
+   GOOGLE_APPLICATION_CREDENTIALS=path/to/your/credentials.json
+   ```
+
+### Running the Application
+1. Compile TypeScript code (if necessary):
+   ```
+   tsc
+   ```
+
+2. Start the application:
+   ```
+   node index.js
+   ```
+
+3. Access the SQL editor in your web browser or client by navigating to http://localhost:3000.
+
+## Additional Notes
+- The SQL editor is a work in progress and may contain bugs or incomplete features.
+- For more information on how to use the SQL editor, refer to the Usage section in the README.md file.
+```
+
+These instructions provide a step-by-step guide on how to set up and run your SQL editor, including installation, configuration of environment variables, and starting the application. Adjust the instructions as needed based on the specifics of your project.
 ### Additional examples
 Additional examples or variations of SQL queries are provided to demonstrate advanced usage scenarios.
